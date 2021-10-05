@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" />
+	<link rel="stylesheet" href="/css/main.css" />
+	<title>Guía rápida</title>
+
+	<style>
+		.small {
+			font-size: .8rem;
+			margin-left: .5rem;
+		}
+	</style>
+</head>
+
+<body>
+	<main style="padding: 1rem; margin: auto; max-width: 720px;">
+		<h1>Guía rápida</h1>
+
+		<article>
+			<h2>Descripción</h2>
+			<section>
+				<p>
+					Este repositorio está preconfigurado para que puedas empezar
+					a escribir código sin mucho esfuerzo previo.</p>
+				<p>
+					En esta Guía rápida se detalla cómo usar las opciones
+					disponibles y la disposición de la estructura de carpetas.</p>
+			</section>
+		</article>
+
+		<article>
+			<h2>Caracteristicas</h2>
+			<ul>
+				<li>Live Server</li>
+				<li>Compilar SASS</li>
+				<li>Fuente: Roboto</li>
+				<li>Íconos de Material Design</li>
+				<li>100% personalizable</li>
+			</ul>
+		</article>
+
+		<article>
+			<h2>Estructura de carpetas</h2>
+			<ul>
+				<li>/assets <span class="small">Recursos gráficos (imágenes, fuentes, etc)</span></li>
+				<li>/css <span class="small">Carpeta de archivos CSS compilados</span></li>
+				<li>/pages <span class="small">Páginas adicionales</span></li>
+				<li>/scss</li>
+				<ul>
+					<li>/components <span class="small">Componentes (No olvides importarlos en main.scss)</span></li>
+					<li>_init.sscs <span class="small">Inicializa algunas propiedades y etiquetas</span></li>
+					<li>_variables.sscs <span class="small">Declara e inicializa tus variables</span></li>
+					<li>main.sscs <span class="small">Archivo SASS que importa los otros y se compila</span></li>
+				</ul>
+				<li>.gitignore <span class="small">Especifica qué archivos o carpetas ignora git</span></li>
+				<li>index.html <span class="small">Recursos gráficos</span></li>
+				<li>package.json
+					<span class="small">Archivo de configuración, desde acá puedes registrar más paquetes</span>
+				</li>
+				<li>README.md <span class="small">Guía de instalación</span></li>
+			</ul>
+		</article>
+
+		<article>
+			<h2>Uso</h2>
+			<section>
+				<h3>Live Server</h3>
+				<p>Live Server crea un servidor local y lo abre en tu navegador. También actualiza la página
+					cada vez que encuentra un cambio en el código. Para activarlo, ejecuta el siguiente comando
+					en una nueva terminal.</p>
+				<pre>npm run server</pre>
+			</section>
+			<section>
+				<h3>Compilar SASS</h3>
+				<p>El archivo /scss/main.scss compila a /css/main.css. Para compilar automáticamente y
+					escuchar los cambios en el código, ejecuta el siguiente comando en una nueva terminal.
+				</p>
+				<pre>npm run scss</pre>
+			</section>
+			<section>
+				<h3>Fuente: Roboto</h3>
+				<p>Roboto es la fuente instalada por defecto con las siguientes variaciones: Normal y Bold.</p>
+			</section>
+			<section>
+				<h3>Íconos de Material Design</h3>
+				<p>Para mostrar íconos utiliza el siguiente formato, y accede a
+					<a href="https://material.io/resources/icons/" target="_blank">Material Design Icons</a>
+					para obtener los nombres de los íconos.</p>
+				<!-- Ejemplos -->
+				<div>
+					<i class="material-icons">home</i>
+					<i class="material-icons">menu</i>
+					<i class="material-icons">folder</i>
+					<i class="material-icons">photo_camera</i>
+				</div>
+				<pre>&lt;i class="material-icons"&gt; nombre_del_icono &lt;/i&gt;</pre>
+			</section>
+			<section>
+				<h3>100% personalizable</h3>
+				<p>Todas las características expuestas son modificables. Puedes agregar, editar o eliminar
+					archivos sin problemas, siempre respentado la estructura de carpetas y el lenguaje.</p>
+			</section>
+
+		</article>
+
+		<article>
+			<h2>Extra</h2>
+			<section>
+				<h3>Usar imágenes para prueba</h3>
+				<p>Si necesitas colocar una imagen y no tienes una a la mano o no quieres hacer todo el proceso
+					para importarla, entonces puedes utilizar Lorem Picsum. Lorem Picsum es una herramienta muy
+					útil que brinda imágenes totalmente a medida por filtros, tamaños, categoría, etc. Visita su
+					<a href="https://picsum.photos/" target="_blank">página oficial</a> para más información.</p>
+				<p>Ejemplo con una imagen aleatoria de 300px de ancho y 200px de alto</p>
+				<pre>&lt;img src="https://picsum.photos/300/200" /&gt;</pre>
+				<img src="https://picsum.photos/300/200" />
+			</section>
+		</article>
+
+		<footer>
+			<section>
+				<h2>¡Gracias!</h2>
+				<p>Este proyecto se irá actualizando gradualmente con mejoras y nuevas características.</p>
+				<p>Más proyectos en:
+					<a href="https://www.youtube.com/channel/UCm1I5OX5xZfQSiSlmbb-Abg" target="_blank">YouTube</a>
+					y <a href="https://github.com/MarceloVelasquez" target="_blank">GitHub</a>
+				</p>
+			</section>
+			<p style="text-align: right; margin-top: 2rem">v1.0.1</p>
+		</footer>
+	</main>
+</body>
+
+</html>

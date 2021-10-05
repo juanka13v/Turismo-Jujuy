@@ -1,0 +1,147 @@
+@import 'scss/variables';
+
+.contenedor-about-us {
+    background-color: $color-1;
+    width: 100%;
+    display: flex;
+    .contenedor-info-about {
+        padding: 1.5rem;
+        margin-left: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 3rem;
+        }
+        .text-about {
+            display: flex;
+            p {
+                display: block;
+                margin-right: 1rem;
+                button {
+                    margin-top: 1rem;
+                }
+            }
+
+        }
+    } 
+
+    .img-info-about {
+        margin-right: 3rem;
+        img {
+            width: 400px;
+            height: 325px;
+            padding: 2rem;
+        }
+    }
+} 
+
+
+
+
+
+
+
+
+@media screen and (max-width: $breakpoint-lg) {
+    nav {
+        background-color: aqua;
+    }
+
+    .contenedor-about-us {
+        
+        .contenedor-info-about {
+            margin-left: 0;
+            
+            .text-about {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-bottom: 1.5rem;
+                    height: fit-content;
+                }
+    
+            }
+        }
+
+        .img-info-about {
+            margin-right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img {
+                width: 400px;
+                height: 325px;
+                padding: 2rem;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    nav {
+      background-color: beige;
+    }
+
+    .contenedor-about-us {
+        display: flex;
+        flex-direction: column;
+        .contenedor-info-about {
+            margin-left: 0;
+            
+            .text-about {
+                display: flex;
+                flex-direction: column;
+                p {
+                    margin-bottom: 1.5rem;
+                    height: fit-content;
+                    button {
+                        align-self: center;
+                        justify-self: center;
+                        
+                    }
+                }
+    
+            }
+        }
+
+        .img-info-about {
+            margin-right: 0;
+            img {
+                width: 550px;
+                height: 425px;
+                padding: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    nav {
+        background-color: rgb(159, 193, 236);
+    }
+
+    .contenedor-about-us {
+        
+        .contenedor-info-about {
+            margin-left: 0;
+           
+            .text-about {
+                display: flex;
+                flex-direction: column;
+                
+            }   
+        }
+
+        .img-info-about {
+            margin-right: 0;
+            img {
+                width: 300px;
+                height: 225px;
+                padding: 0rem;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}

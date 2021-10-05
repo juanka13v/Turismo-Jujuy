@@ -1,0 +1,22 @@
+@import 'scss/variables';
+
+button {
+    border-radius: 28px;
+    font-size: 16px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    font-family: $font-family-3;
+    font-weight: 700;
+    color: $light;
+    background-color: $color-4;
+    border: 1px solid $color-6;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        color: $color-3;
+        border: 1px solid $color-6;
+        background-color: $color-6;
+        font-weight: 700;
+    }
+} 

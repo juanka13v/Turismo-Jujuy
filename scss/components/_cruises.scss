@@ -1,0 +1,119 @@
+@import "scss/variables";
+
+.cruises-container {
+    background-color: $color-4;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+
+    .cruises-container__info {
+        padding: 0 2rem;
+        margin-bottom: 2rem;
+        h3 {
+            text-align: center;
+            font-size: 2rem;
+            color: $color-6;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+            color: $color-1;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .cruises-container__cards {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        .cruises-container__card-item {
+            
+            background-color: $color-1;
+            display: flex;
+            flex-direction: column;
+            width: 27%;
+            
+
+            img {
+                height: 200px;
+                object-fit: cover;
+                margin-bottom: 1rem;
+            }
+
+            h4 {
+                font-size: 2rem;
+                color: $color-4;
+                font-family: monospace;
+                margin-bottom: 1rem;
+                padding: 0 1rem;
+            }
+
+            p {
+                font-size: 1rem;
+                color: $color-2;
+                font-family: sans-serif;
+                padding: 0 1rem 1rem 1rem;
+            }
+        }
+    }
+
+    
+}
+
+
+
+
+@media screen and (max-width: $breakpoint-lg) {
+
+    .cruises-container {
+        
+
+        .cruises-container__info {}
+
+        .cruises-container__cards {
+            
+            .cruises-container__card-item {
+
+                img {
+                    height: 150px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    
+    .cruises-container {
+        
+
+        .cruises-container__info {}
+
+        .cruises-container__cards {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-4;
+            .cruises-container__card-item {
+                margin-bottom: 3rem;
+                background-color: $color-1;
+                width: 80%;
+                img {
+                    height: 150px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+   
+
+    
+}

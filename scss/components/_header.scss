@@ -1,0 +1,213 @@
+@import "scss/variables";
+
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  align-items: baseline;
+  position: fixed;
+  z-index: 10000;
+  transition: all 0.5s ease;
+
+  .logo {
+    color: $color-1;
+    display: flex;
+  }
+
+  span {
+    color: $color-6;
+    margin: auto 0;
+  }
+
+  .menu {
+    list-style: none;
+    display: flex;
+    margin: auto 0;
+  }
+
+  .hamburguer {
+      display: none;
+      cursor: pointer;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    color: $light;
+    background-color: $color-4;
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+    align-self: center;
+  }
+
+  a:hover {
+    background-color: $color-5;
+    color: $color-3;
+    margin: 0 15px;
+  }
+}
+
+.active-nav {
+  background-color: $color-4;
+  transition: all 0.5s ease;
+}
+
+/*--------- container-header --------------*/
+
+header .contenedor-header {
+  min-height: 100vh;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("/assets/fondo-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  .contenedor-info {
+    padding: 1rem;
+    margin-top: 2rem;
+    h2 {
+      font-size: $font-1;
+      color: $color-6;
+      font-family: $font-family-1;
+      font-weight: 200;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: $font-2;
+      color: $color-1;
+      font-family: $font-family-2;
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: $font-3;
+      color: $color-5;
+      font-family: $font-family-3;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .btns {
+        display: flex;
+      justify-content: center;
+    }
+  }
+  
+  .contenedor-images {
+    margin-top: 2rem;
+  }
+}
+
+/*--------------media query-----------*/
+
+
+@media screen and (max-width: $breakpoint-xl) {
+    
+} 
+
+
+
+@media screen and (max-width: $breakpoint-lg) {
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    nav {
+      
+      height: 4rem;
+      padding: 1rem 0;
+      .menu ,.menu-disable{
+        background-color: $color-4;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        z-index: -100;
+        top: 4rem;
+        left: -100vw;
+        transition: all 0.5s ease;
+      }
+
+      .hamburguer {
+          display: block;
+          span {
+            font-size: 1.5rem;
+            margin-right: .5rem;
+          }
+      }
+
+      .menu-active {
+        background-color: $color-4;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        position: absolute;
+        top: 4rem;
+        left: 0;
+        transition: all 0.3s ease;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: $light;
+        background-color: $color-4;
+        border-radius: 0;
+        font-size: 1.5rem;
+        padding: 5px 10px;
+        margin: 0;
+        transition: all 0.3s ease;
+        align-self: center;
+        z-index: 1;
+      }
+    
+      a:hover {
+        background-color: $color-5;
+        color: $color-3;
+        margin: 0 15px;
+      }
+      
+      
+  }
+
+  header .contenedor-header {
+    flex-direction: column;
+    min-height: fit-content;
+    padding: 2rem 0;
+    .contenedor-info {
+      padding: 1rem;
+      margin-top: 2rem;
+      h2 {
+        font-size: 4rem;
+      }
+  
+      h3 {
+        font-size: 1.2rem;
+      }
+  
+      p {
+        font-size: 1rem;
+      }
+    }
+  } 
+
+  .contenedor-images {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    
+}

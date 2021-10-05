@@ -1,0 +1,28 @@
+{
+  "name": "cloned",
+  "version": "1.0.1",
+  "description": "Repo for apps and webs cloned made with HTML and CSS or SASS.",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm i -g node-sass && npm i -g live-server",
+    "scss": "node-sass -w scss -o css",
+    "server": "live-server --host=localhost --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarceloVelasquez/clone.git"
+  },
+  "keywords": [
+    "clone",
+    "webs",
+    "html",
+    "css"
+  ],
+  "author": "Marcelo Velasquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarceloVelasquez/cloned/issues"
+  },
+  "homepage": "https://github.com/MarceloVelasquez/cloned#readme",
+  "dependencies": {}
+}

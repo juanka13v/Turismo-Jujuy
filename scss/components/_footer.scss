@@ -1,0 +1,106 @@
+@import "scss/variables";
+
+.footer-container {
+    background-color: $color-4;
+    padding: 2rem;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    .footer-container__copyright {
+        margin: 1rem;
+        ul {
+            list-style: none;
+            li {
+                color: $color-6;
+
+                
+                span:nth-child(1) {
+                    color: azure;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        
+    }
+
+    .footer-container__customers {
+        margin: 1rem;
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 1rem;
+                font-family: sans-serif;
+                color: $color-2;
+                margin-bottom: .5rem;
+            }
+
+            li:nth-child(1) {
+                color: $color-1;
+            }
+        }
+    }
+
+    .footer-container__company {
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 1rem;
+                font-family: sans-serif;
+                color: $color-2;
+                margin-bottom: .5rem;
+            }
+
+            li:nth-child(1) {
+                color: $color-1;
+            }
+        }
+    }
+
+    .footer-container__futher-information {
+        margin: 1rem;
+        ul {
+            list-style: none;
+
+            li {
+                font-size: 1rem;
+                font-family: sans-serif;
+                color: $color-2;
+                margin-bottom: .5rem;
+            }
+
+            li:nth-child(1) {
+                color: $color-1;
+            }
+        }
+    }
+
+    .footer-container__follow-us {
+        margin: 1rem;
+        h3 {
+           font-size: 1rem; 
+           font-family: sans-serif;
+           font-weight: 400;
+           color: $color-1;
+           margin-bottom: 1rem;
+        }
+
+        .footer-container__follow-us--items {
+            color: $color-6;
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-md) {
+    
+.footer-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    
+}

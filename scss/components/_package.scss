@@ -1,0 +1,66 @@
+@import "scss/variables";
+
+.package {
+    background-color: $color-1;
+    width: 100%;
+    display: flex; 
+    .package--info {
+        width: 70%;
+        padding: 2rem;
+
+        h3 {
+            font-size: 2rem;
+            color: $color-6;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: $color-4;
+            font-family: sans-serif;
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: 1.5rem;
+            color: $color-4;
+            font-family: sans-serif;
+        }
+    }
+
+    .package--btn {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: $breakpoint-lg) {
+    
+
+    
+}
+
+@media screen and (max-width: $breakpoint-md) {
+    
+    .package {
+        flex-direction: column;
+        .package--info {
+            width: 100%;
+        }
+        .package--btn {
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+    }
+
+    
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    
+
+    
+}
